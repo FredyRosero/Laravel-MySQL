@@ -1,0 +1,11 @@
+PHP 7.3 + Curl
+Composer 2
+git config --global user.email "faroseroc@unal.edu.co"
+git config --global user.name "Fredy Rosero"
+
+
+composer create-project laravel/laravel laravel+mysql
+composer install
+php artisan serve
+php artisan list:route
+php artisan make:controller AnimalController --api
