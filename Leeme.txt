@@ -1,9 +1,18 @@
-PHP 7.3 + Curl + mbstring + xml
+MySQL Server
+PHP 7.3 + Curl + mbstring + xml + mysql
 Composer 2
-
+extension=pdo_mysql y mysqli -> sudo nano /etc/php/7.3/apache2/php.ini
 
 composer create-project laravel/laravel laravel+mysql
 composer install
 php artisan serve
-php artisan list:route
+Route::get('/hola', function() { return "mundo!"; });
+curl localhost:8000/api/hola
+php artisan make:model Animal --migration
+.env
+php artisan migrate
+php artisan migrate:rollback
+Modelo:     protected $fillable = [];
+
+php artisan route:list
 php artisan make:controller AnimalController --api
