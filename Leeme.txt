@@ -1,7 +1,5 @@
-PHP 7.3 + Curl
+PHP 7.3 + Curl + mbstring + xml
 Composer 2
-git config --global user.email "faroseroc@unal.edu.co"
-git config --global user.name "Fredy Rosero"
 
 
 composer create-project laravel/laravel laravel+mysql
