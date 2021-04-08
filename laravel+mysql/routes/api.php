@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Animal;
+use App\Http\Controllers\AnimalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::get('/info', function() {
     phpinfo();
 });
 
+Route::resource('animal','AnimalController');
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
